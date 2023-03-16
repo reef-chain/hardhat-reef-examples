@@ -20,7 +20,7 @@ task("accounts", "Prints the list of accounts", async () => {
  */
 module.exports = {
   solidity: "0.8.4",
-  defaultNetwork: "reef",
+  defaultNetwork: "reef_mainnet",
   networks: {
     reef: {
       url: "ws://substrate-node:9944",
@@ -34,8 +34,8 @@ module.exports = {
       },
     },
     reef_mainnet: {
-      url: "wss://rpc.reefscan.com/ws",
-      scanUrl: "wss://reefscan.com",
+      url: "wss://rpc.reefscan.info/ws",
+      scanUrl: "https://api.reefscan.info",
       seeds: {
         mainnet_account: process.env.MNEMONIC_MAINNET || "",
       },
