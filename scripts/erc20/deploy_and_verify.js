@@ -6,8 +6,8 @@ async function main() {
   const acc = await hre.reef.getSignerByName("testnet_account");
   const Token = await hre.reef.getContractFactory("Token", acc);
   const args = [1000000];
-  const token = await Token.deploy(1000000);
-
+  const token = await Token.deploy(...args);
+//const token = await Token.attach('0x9b9a32c56c8F5C131000Acb420734882Cc601d39');
   await token.deployed();
   console.log("Deploy done");
   console.log({

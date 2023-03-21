@@ -20,15 +20,15 @@ task("accounts", "Prints the list of accounts", async () => {
  */
 module.exports = {
   solidity: "0.8.4",
-  defaultNetwork: "reef_mainnet",
+  defaultNetwork: "reef_testnet",
   networks: {
     reef: {
       url: "ws://substrate-node:9944",
       scanUrl: "http://api:8000",
     },
     reef_testnet: {
-      url: "wss://rpc-testnet.reefscan.com/ws",
-      scanUrl: "https://testnet.reefscan.com", // Localhost verification testing: http://localhost:3000
+      url: "wss://rpc-testnet.reefscan.info/ws",
+      scanUrl: "https://api-testnet.reefscan.info", // Localhost verification testing: http://localhost:3000
       seeds: {
         testnet_account: process.env.MNEMONIC_TESTNET || "",
       },
