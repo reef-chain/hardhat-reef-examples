@@ -21,15 +21,15 @@ module.exports = {
       url: "ws://127.0.0.1:9944",
     },
     reef_testnet: {
-      url: "wss://rpc-testnet.reefscan.com/ws",
-      scanUrl: "https://testnet.reefscan.com", // Localhost verification testing: http://localhost:3000
+      url: "wss://rpc-testnet.reefscan.info/ws",
+      scanUrl: "https://api-testnet.reefscan.info", 
       seeds: {
         testnet_account: "<MNEMONIC_SEED>",
       },
     },
     reef_mainnet: {
-      url: "wss://rpc.reefscan.com/ws",
-      scanUrl: "wss://reefscan.com",
+      url: "wss://rpc.reefscan.info/ws",
+      scanUrl: "wss://api.reefscan.info",
       seeds: {
         mainnet_account: "<MNEMONIC_SEED>",
       },
