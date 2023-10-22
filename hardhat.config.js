@@ -27,15 +27,15 @@ module.exports = {
       scanUrl: "http://api:8000",
     },
     reef_testnet: {
-      url: "wss://rpc-testnet.reefscan.info/ws",
-      scanUrl: "https://api-testnet.reefscan.info", // Localhost verification testing: http://localhost:3000
+      url: "wss://rpc-testnet.reefscan.com/ws",
+      scanUrl: "https://api-testnet.reefscan.com", // Localhost verification testing: http://localhost:3000
       seeds: {
         testnet_account: process.env.MNEMONIC_TESTNET || "",
       },
     },
     reef_mainnet: {
-      url: "wss://rpc.reefscan.info/ws",
-      scanUrl: "https://api.reefscan.info",
+      url: "wss://rpc.reefscan.com/ws",
+      scanUrl: "https://api.reefscan.com",
       seeds: {
         mainnet_account: process.env.MNEMONIC_MAINNET || "",
       },
