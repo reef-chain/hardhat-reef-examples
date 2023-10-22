@@ -98,7 +98,4 @@ The above commands will deploy on development (local) network by default. To dep
 yarn hardhat run scripts/flipper/deploy.js --network reef_testnet 
 ```
 
-To get initial REEF tokens on the testnet, visit [dev Matrix chat](https://app.element.io/#/room/#reef:matrix.org) and use the following command:
-```
-!drip REEF_ADDRESS
-```
+To get initial REEF tokens on the testnet, visit [Reef Discord testnet-faucet](https://discord.com/channels/793946260171259904/1087737503550816396) 
