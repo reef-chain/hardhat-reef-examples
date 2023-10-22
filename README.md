@@ -1,6 +1,6 @@
 # hardhat-reef-examples
 
-hardhat-reef-examples shows the use of [hardhat-reef](https://github.com/reef-defi/hardhat-reef) plugin to interact with the Reef chain.
+hardhat-reef-examples shows the use of [hardhat-reef](https://github.com/reef-chain/hardhat-plugin-reef) plugin to interact with the Reef chain.
 
 
 ## Installing
@@ -21,15 +21,15 @@ module.exports = {
       url: "ws://127.0.0.1:9944",
     },
     reef_testnet: {
-      url: "wss://rpc-testnet.reefscan.info/ws",
-      scanUrl: "https://api-testnet.reefscan.info", 
+      url: "wss://rpc-testnet.reefscan.com/ws",
+      scanUrl: "https://api-testnet.reefscan.com", 
       seeds: {
         testnet_account: "<MNEMONIC_SEED>",
       },
     },
     reef_mainnet: {
-      url: "wss://rpc.reefscan.info/ws",
-      scanUrl: "wss://api.reefscan.info",
+      url: "wss://rpc.reefscan.com/ws",
+      scanUrl: "wss://api.reefscan.com",
       seeds: {
         mainnet_account: "<MNEMONIC_SEED>",
       },
