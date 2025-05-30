@@ -19,8 +19,16 @@ task("accounts", "Prints the list of accounts", async () => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  solidity: "0.8.4",
-  defaultNetwork: "reef_testnet",
+  solidity:{
+    compilers: [
+      // {
+      //   version: "0.8.4",
+      // },
+      {
+        version: "0.8.11",
+      }]
+  },
+  defaultNetwork: "reef_mainnet",
   networks: {
     reef: {
       url: "ws://substrate-node:9944",
@@ -37,7 +45,7 @@ module.exports = {
       url: "wss://rpc.reefscan.com/ws",
       scanUrl: "https://api.reefscan.com",
       seeds: {
-        mainnet_account: process.env.MNEMONIC_MAINNET || "",
+        testnet_account: process.env.MNEMONIC_MAINNET || "",
       },
     },
   },
